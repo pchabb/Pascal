@@ -28,11 +28,12 @@ class  Pascal
 
 	static int fac(int log, int choose)
 	{
-		int r = 111111;
+		int r = 1;
 		int nr = 1;
 		for (int i = choose; i>=1; i--)
 			r = r*i;
 		for (int i = log-choose; i>=1; i--)
 			nr = nr*i;
+		return r*nr;
 	}//end (n-r)!r!
 }
