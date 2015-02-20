@@ -23,7 +23,6 @@ class  Pascal
 		int c = 1;
 		for (int i=n; i>=1; i--)//n!
 			c = c*i;
-		return c;
 	}//end n!
 
 	static int fac(int log, int choose)
@@ -34,5 +33,6 @@ class  Pascal
 			r = r*i;
 		for (int i = log-choose; i>=1; i--)
 			nr = nr*i;
+		c=1;
 	}//end (n-r)!r!
 }
